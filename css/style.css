@@ -17,7 +17,7 @@ p {
 
 .navbar-light {
   border: 0;
-  background-color: #fafafa !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -35,6 +35,10 @@ p {
   border: 1px solid #212529;
 }
 
+#showcase {
+  margin-top: 96px;
+}
+
 #showcase h1 {
   font-size: 3.125rem;
 }
@@ -46,4 +50,21 @@ p {
 
 #showcase .showcase-right {
   margin-top: 90px;
+}
+
+#testimonial {
+  margin-top: 40px;
+  padding: 50px 0 30px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#testimonial p {
+  font-size: 1.75rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#testimonial p.customer {
+  font-size: 1.25rem;
+  color: #666;
 }
