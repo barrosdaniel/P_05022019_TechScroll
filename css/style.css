@@ -1,4 +1,21 @@
-.navbar-default {
+body {
+  margin-top: 56px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-light {
   border: 0;
   background-color: #fafafa !important;
   font-family: 'Poppins', sans-serif;
@@ -12,4 +29,21 @@
 
 .navbar-nav a {
   color: #111;
+}
+
+.btn-light {
+  border: 1px solid #212529;
+}
+
+#showcase h1 {
+  font-size: 3.125rem;
+}
+
+#showcase img {
+  width: 90%;
+  margin-left: 3.75rem;
+}
+
+#showcase .showcase-right {
+  margin-top: 90px;
 }
