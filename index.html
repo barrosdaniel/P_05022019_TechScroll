@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600|Poppins:300,400,500,600,700|Roboto"
     rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/scrollreveal"></script>
   <title>TechScroll</title>
 </head>
 
@@ -127,22 +127,22 @@
       <div class="row">
         <div class="col-sm-5">
           <form>
-            <div class="form-group">
+            <div class="form-group form-name">
               <label for="name">Name: </label>
               <input class="form-control" type="text" name="name" id="name"
                 placeholder="Enter name">
             </div>
-            <div class="form-group">
+            <div class="form-group form-email">
               <label for="email">Email: </label>
               <input class="form-control" type="email" name="email" id="email"
                 placeholder="Enter email address">
             </div>
-            <div class="form-group">
+            <div class="form-group form-message">
               <label for="message">Message: </label>
               <textarea class="form-control" name="message" id="message"
                 placeholder="Enter your message" rows="5"></textarea>
             </div>
-            <button class="btn btn-light">Send Message</button>
+            <button class="btn btn-light form-button">Send Message</button>
           </form>
         </div>
         <div class="col-sm-7"></div>
@@ -168,6 +168,70 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script>
+    // Scroll Reveal
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('.showcase-left', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px'
+    });
+    sr.reveal('.showcase-right', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('.showcase-btn', {
+      delay: 2000,
+      duration: 2000,
+      origin: 'bottom',
+      distance: '80px'
+    });
+    sr.reveal('#testimonial div', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '80px'
+    });
+    sr.reveal('.info-left', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.info-right', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.form-name', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.form-email', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.form-message', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.form-button', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
     // Replace year for the copyright with current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
