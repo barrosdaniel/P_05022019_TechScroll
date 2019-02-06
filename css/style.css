@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin-top: 56px;
 }
@@ -67,4 +71,13 @@ p {
 #testimonial p.customer {
   font-size: 1.25rem;
   color: #666;
+}
+
+#info1 img {
+  width: 90%;
+  margin-left: 3.75rem;
+}
+
+#info1 .info-right {
+  margin-top: 90px;
 }
